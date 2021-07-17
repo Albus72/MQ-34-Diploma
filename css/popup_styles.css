@@ -1,0 +1,236 @@
+
+body {
+    min-height: 100vh;
+    padding: 0;
+    margin: 0;
+    background: black;
+}
+
+@font-face {
+  font-family: "OpenSans-Regular";
+  src: url(../fonts/OpenSans-Regular.woff);
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "OpenSans-Bold";
+  src: url(../fonts/OpenSans-Bold.woff);
+  font-weight: 700;
+  font-style: normal;
+}
+
+.popup {
+    max-width: 390px;
+    max-height: 590px;
+    padding: 50px;
+    border: 1px solid #000000;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-flow: column wrap;
+    position: absolute;
+    top: 50vh;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: white;
+  }
+  
+  .page-feedback {
+    font-size: 18px;
+    margin-bottom: 55px;
+    font-family: OpenSans-Bold;
+    text-transform: uppercase;
+    text-align: center;
+  }
+  
+  .textarea {
+    min-height: 100px;
+    max-height: 250px;
+    max-width: 100%;
+    color: #b9a464;
+    font-size: 12px;
+    font-family: OpenSans-Regular;
+    border: none;
+    background-color: #f4f7f6;
+    resize: none;
+  }
+  
+  .form-group:nth-child(n + 2) {
+    margin-top: 30px;
+  }
+  
+  .field-group {
+    display: flex;
+    flex-flow: column wrap;
+  }
+  .form-actions {
+    text-align: center;
+  }
+  
+  .field-label {
+    display: block;
+    font-size: 14px;
+    font-weight: 700;
+    margin-bottom: 12px;
+    font-size: 12px;
+    font-family: OpenSans-Regular;
+  }
+  
+  .select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background-image: url(../svg/form-arrows.svg);
+    background-repeat: no-repeat;
+    background-position: right 5px center;
+    background-size: 9px auto;
+    display: inline-block;
+    box-sizing: border-box;
+    width: 100%;
+    height: 48px;
+    padding-left: 10px;
+    padding-right: 25px;
+    margin: 0;
+    border: none;
+    background-color: #f4f7f6;
+    font-size: 12px;
+    font-family: OpenSans-Regular;
+    color: #a9acab;
+  }
+  
+  .select:focus {
+    outline: 2px solid #b9a464;
+    outline-offset: 4px;
+  }
+  
+  .radio {
+    font-family: OpenSans-Regular;
+    font-size: 12px;
+  }
+
+  .radio label { 
+    position: relative;
+    padding-left: 30px;
+    cursor: pointer;
+    width: 30px;
+    float: left;
+    line-height: 18px;
+  } 
+  
+  .radio input {
+    position: absolute;
+    opacity: 0;    
+  } 
+  
+  .button {
+    text-transform: uppercase;
+    font-size: 12px;
+    width: 100%;
+    padding: 10px 25px;
+    border: none;
+    cursor: pointer;
+    font-family: OpenSans-Bold;
+  }
+  
+  .button-submit {
+    color: #ffffff;
+    background-color: #b59f5b;
+  }
+  
+  .field:focus,
+  .button:focus {
+    outline: 2px solid #b59f5b;
+    outline-offset: 4px;
+  }
+  
+  .button:hover {
+    background-color: #b59f5b;
+  }
+  
+  .popup__close {
+    background-color: transparent;
+    border: none;
+    padding: 0;
+    text-indent: -9999px;
+    cursor: pointer;  
+    width: 1.4em;
+    height: 1em;
+    font-size: 20px;
+    position: absolute;
+    top: -1.5em;
+    right: 0;  
+  }
+  
+  .popup__close:before, .popup__close:after {
+    content: "";
+    background-color: #ffffff;
+    border-radius: 5px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 1.4em;
+    height: 0.2em;
+  }
+  
+  .popup__close:before {
+    transform: translate(-50%, -50%) rotate(45deg);
+  }
+  
+  .popup__close:after {
+    transform: translate(-50%, -50%) rotate(-45deg);
+  }
+
+/* [type="radio"] можно заменить на .radio input, чтобы при добавлении других отличающихся radio кнопок эти стили не применялись к ним */
+[type="radio"]:checked,
+[type="radio"]:not(:checked) {
+    position: absolute;
+    left: -9999px;
+}
+
+[type="radio"]:checked + label,
+[type="radio"]:not(:checked) + label {
+    position: relative;
+    padding-left: 24px;
+    cursor: pointer;
+    line-height: 20px;
+    display: inline-block;
+}
+
+[type="radio"]:checked + label:before,
+[type="radio"]:not(:checked) + label:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 18px;
+    height: 18px;
+    border: 1px solid #b59f5b;
+    border-radius: 100%;
+    background: white;
+}
+
+[type="radio"]:checked + label:after,
+[type="radio"]:not(:checked) + label:after {
+    content: '';
+    width: 12px;
+    height: 12px;
+    background: #b59f5b;
+    position: absolute;
+    top: 4px;
+    left: 4px;
+    border-radius: 100%;
+    -webkit-transition: all 0.2s ease;
+    transition: all 0.2s ease;
+}
+
+[type="radio"]:not(:checked) + label:after {
+    opacity: 0;
+    -webkit-transform: scale(0);
+    transform: scale(0);
+}
+
+[type="radio"]:checked + label:after {
+    opacity: 1;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+}
