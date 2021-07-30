@@ -294,12 +294,9 @@ a {
   margin-left: 7%;
 }
 
-.aside-news-data {
-  font-size: 12px;
-}
-
 .aside-news-data-link {
   color: #a0a0a0;
+  font-size: 12px;
 }
 
 .aside-news-title {
