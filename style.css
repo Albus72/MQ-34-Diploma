@@ -100,7 +100,6 @@ a {
 }
 
 .head-menu-link {
-  text-decoration: none;
   color: #ffffff;
   font-size: 13px;
 }
@@ -236,7 +235,6 @@ a {
 
 .news-category-link {
   color: #b59f56;
-  text-decoration: none;
 }
 
 .news-title {
@@ -248,9 +246,9 @@ a {
 
 .news-title-link {
   text-transform: uppercase;
-  text-decoration: none;
   color: #0f0d0e;
 }
+
 .news-data-author {
   width: 100%;
   list-style: none;
@@ -263,12 +261,10 @@ a {
 }
 
 .news-data-link {
-  text-decoration: none;
   color: #888888;
 }
 
 .news-author-link {
-  text-decoration: none;
   color: #000000;
 }
 
@@ -299,7 +295,6 @@ a {
 }
 
 .aside-news-data-link {
-  text-decoration: none;
   color: #a0a0a0;
 }
 
@@ -310,7 +305,6 @@ a {
 }
 
 .aside-news-title-link {
-  text-decoration: none;
   color: #000000;
 }
 
@@ -413,7 +407,6 @@ a {
 }
 
 .tegs-link {
-  /*text-decoration: none;*/
   color: #0f0d0e;
   display: inline-flex;
   padding: .5em 1em;
@@ -441,7 +434,6 @@ a {
 }
 
 .thems-link {
-  /*text-decoration: none;*/
   color: #0f0d0e;
   display: inline-flex;
   flex-direction: column;
@@ -537,7 +529,6 @@ a {
 }
 
 .product-description-link {
-  /*text-decoration: none;*/
   color: #b59f5b;
 }
 
@@ -589,9 +580,9 @@ a {
 }
 
 .footer-copyright {
-  /*text-decoration: none;*/
   font-size: 12px;
   color: #999999;
+  font-style: normal;
 }
 
 .black-layer {
