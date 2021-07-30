@@ -256,7 +256,11 @@ a {
   margin-top: 3%;
 }
 
-.news-data-author-item:nth-child(n + 2) {
+/*.news-data-author-item:nth-child(n + 2) {
+  margin-left: 4%;
+}*/
+
+.news-data-author-item {
   margin-left: 4%;
 }
 
