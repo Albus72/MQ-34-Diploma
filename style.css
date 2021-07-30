@@ -12,6 +12,10 @@ body {
   position: relative;
 }
 
+a {
+  text-decoration: none;
+}
+
 @font-face {
   font-family: "OpenSans-Regular";
   src: url(../fonts/OpenSans-Regular.woff);
@@ -409,7 +413,7 @@ body {
 }
 
 .tegs-link {
-  text-decoration: none;
+  /*text-decoration: none;*/
   color: #0f0d0e;
   display: inline-flex;
   padding: .5em 1em;
@@ -437,7 +441,7 @@ body {
 }
 
 .thems-link {
-  text-decoration: none;
+  /*text-decoration: none;*/
   color: #0f0d0e;
   display: inline-flex;
   flex-direction: column;
@@ -533,7 +537,7 @@ body {
 }
 
 .product-description-link {
-  text-decoration: none;
+  /*text-decoration: none;*/
   color: #b59f5b;
 }
 
@@ -585,7 +589,7 @@ body {
 }
 
 .footer-copyright {
-  text-decoration: none;
+  /*text-decoration: none;*/
   font-size: 12px;
   color: #999999;
 }
@@ -625,7 +629,7 @@ body {
     min-height: 130px;
     max-height: 250px;
     max-width: 100%;
-    color: #b9a464;
+    color: #939594;
     font-size: 12px;
     border: none;
     background-color: #f4f7f6;
@@ -670,7 +674,7 @@ body {
     border: none;
     background-color: #f4f7f6;
     font-size: 12px;
-    color: #a9acab;
+    color: #939594;
   }
   
   .select:focus {
