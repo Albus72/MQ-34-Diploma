@@ -885,9 +885,6 @@ a {
  .head-menu {
   display: none;
  }
- .burger-menu {
-  display: all;
- }
  .blog-title {
   margin: 13.5% auto;
  }
@@ -959,7 +956,6 @@ a {
   margin-right: auto;
  }
  .burger-menu {
-  display: all;
   margin-left: auto;
  }
  .head-menu {
